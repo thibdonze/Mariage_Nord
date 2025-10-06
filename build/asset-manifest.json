@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ef823e8.css",
+    "main.js": "/static/js/main.39788718.js",
+    "static/media/frise-wedding1.jpg": "/static/media/frise-wedding1.d6423e6a0c95314d613b.jpg",
+    "index.html": "/index.html",
+    "main.1ef823e8.css.map": "/static/css/main.1ef823e8.css.map",
+    "main.39788718.js.map": "/static/js/main.39788718.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ef823e8.css",
+    "static/js/main.39788718.js"
+  ]
+}
