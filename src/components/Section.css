@@ -1,0 +1,34 @@
+/* Section.css */
+
+.section-with-frise {
+    --frise-width: 270px;     /* largeur de chaque tuile de motif */
+    position: relative;
+    overflow: visible;
+    max-width: 60rem;         /* largeur de la section */
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+  }
+  
+  .section-with-frise::before,
+  .section-with-frise::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: var(--frise-width);
+    height: 100%;
+    background-image: url('frise-wedding1.jpg');
+    background-repeat: repeat-y;
+    background-size: var(--frise-width) auto;  /* Succès : largeur fixe, hauteur native */
+    background-position: top center;
+    pointer-events: none;
+  }
+  
+  /* Positionnement gauche / droite */
+  .section-with-frise::before {
+    left: calc(-1 * var(--frise-width));
+  }
+  .section-with-frise::after {
+    right: calc(-1 * var(--frise-width));
+  }
+  
