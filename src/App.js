@@ -15,7 +15,8 @@ function App() {
   useEffect(() => {
     const hero = heroRef.current;
     const handleWheel = (e) => {
-      if (e.deltaY > 10 && mainRef.current) mainRef.current.scrollIntoView({ behavior: "smooth" });
+      if (e.deltaY > 10 && mainRef.current)
+        mainRef.current.scrollIntoView({ behavior: "smooth" });
     };
     hero?.addEventListener("wheel", handleWheel, { passive: true });
     return () => hero?.removeEventListener("wheel", handleWheel);
@@ -26,11 +27,12 @@ function App() {
     { id: "seloger", label: "Se Loger" },
     { id: "lieu", label: "Le lieu" },
     { id: "rsvp", label: "RSVP" },
-    { id: "participation", label: "Pour notre mariage" }, // label mis à jour
+    { id: "participation", label: "Pour notre mariage" },
   ];
 
   return (
     <div className="font-sans text-gray-800 mx-0 px-0 overflow-x-hidden">
+      {/* --- HERO --- */}
       <section
         ref={heroRef}
         id="hero"
@@ -43,9 +45,12 @@ function App() {
       >
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
 
-        {/* Titre centré avec segment sous le texte */}
+        {/* Titre centré */}
         <div className="relative z-10 text-center px-4">
-          <div className="inline-block" style={{ fontFamily: "'Playfair Display', sans-serif" }}>
+          <div
+            className="inline-block"
+            style={{ fontFamily: "'Playfair Display', sans-serif" }}
+          >
             <h1 className="text-4xl sm:text-6xl md:text-8xl tracking-wide">
               Lise & Thibault
             </h1>
@@ -53,18 +58,20 @@ function App() {
           </div>
         </div>
 
-        {/* Date responsive */}
+        {/* Date */}
         <div className="absolute left-0 right-0 text-center z-10 px-4 top-[60%] -translate-y-1/12">
-          <p className="text-xl sm:text-3xl md:text-5xl" style={{ fontFamily: "'Playfair Display', sans-serif" }}>
+          <p
+            className="text-xl sm:text-3xl md:text-5xl"
+            style={{ fontFamily: "'Playfair Display', sans-serif" }}
+          >
             27 juin 2026
           </p>
         </div>
 
-        {/* Countdown responsive */}
+        {/* Countdown */}
         <div className="absolute left-0 right-0 text-center z-10 px-4 top-[80%] -translate-y-1/12">
           <Countdown targetDate="2026-06-27T16:00:00" />
         </div>
-
 
         {/* Chevron down */}
         <div className="absolute bottom-6 w-full flex justify-center z-10 px-4 animate-bounce text-white/80">
@@ -72,8 +79,15 @@ function App() {
         </div>
       </section>
 
-      <div ref={mainRef} id="main" className="font-playfair">
-        <nav className="sticky top-0 z-10 bg-white shadow flex flex-wrap justify-center gap-2 py-4 overflow-x-auto">
+      {/* --- Section principale (onglets + contenu + footer) --- */}
+      <div
+        ref={mainRef}
+        id="main"
+        className="font-playfair"
+        style={{ backgroundColor: "#fdfaf6" }} // 👈 fond blanc cassé
+      >
+        {/* Onglets */}
+        <nav className="sticky top-0 z-10 bg-[#fdfaf6] shadow flex flex-wrap justify-center gap-2 py-4 overflow-x-auto">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -89,6 +103,7 @@ function App() {
           ))}
         </nav>
 
+        {/* Contenu des onglets */}
         <main className="px-4 pt-3 pb-1 font-playfair">
           {activeTab === "programme" && <Programme />}
           {activeTab === "seloger" && <SeLoger />}
@@ -97,7 +112,10 @@ function App() {
           {activeTab === "participation" && <Participation />}
         </main>
 
-        <footer className="text-center text-sm text-gray-500 py-2">© 2026 Lise & Thibault</footer>
+        {/* Footer */}
+        <footer className="text-center text-sm text-gray-500 py-2">
+          © 2026 Lise & Thibault
+        </footer>
       </div>
     </div>
   );
