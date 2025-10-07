@@ -25,7 +25,7 @@ const Participation = () => {
           carte, ou contribuer à notre voyage de noces — un séjour mêlant aventure et moments les pieds dans l'eau 🌴 — une urne sera mise à
           disposition le jour du mariage. Que ce soit un message, un souvenir,
           un clin d'œil ou un petit coup de pouce pour notre voyage, chaque attention
-          comptera pour nous. Merci pour votre générosité et votre soutien ! ❤️
+          comptera pour nous.
         </p>
 
         {/* --- Virement / IBAN discret --- */}
