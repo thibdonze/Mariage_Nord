@@ -6,6 +6,10 @@ const SeLoger = () => {
   return (
     <Section>
       <div className="max-w-2xl sm:max-w-4xl mx-auto px-4 text-center mt-4 text-gray-800">
+        <p className="mb-6 text-sm sm:text-base italic text-gray-600">
+          Cette liste est loin d'être exhaustive. Il existe de nombreux autres logements à Sens et dans les environs (hôtels, Airbnb, gîtes, etc.) situés à moins de 20 km du château.
+        </p>
+
         <div className="flex flex-col md:flex-row justify-between gap-8">
           {/* Chambres d'hôtes */}
           <div className="flex-1 text-center">
