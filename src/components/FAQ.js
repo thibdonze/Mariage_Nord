@@ -18,8 +18,7 @@ const FAQ = () => {
         <>
           <p className="mb-3">
             <span className="font-semibold">Jour 1 – Le grand jour :</span><br />
-            On sort les belles tenues ! Pas de short, pas de tongs, pas de maillot de foot 
-            (même si c’est celui de la dernière coupe du monde).<br />
+            On sort les belles tenues ! Pas de short, pas de tongs, pas de maillot de foot.
             Pensez élégant et surtout à l’aise pour danser jusqu’au bout de la nuit.
           </p>
           <p>
@@ -41,7 +40,7 @@ const FAQ = () => {
     },
     {
       question: "Quelle est la date limite pour confirmer ma présence (RSVP) ?",
-      answer: `La date limite pour confirmer votre présence est fixée au 15 janvier 2025.`,
+      answer: `La date limite pour confirmer votre présence est fixée au 15 janvier 2026.`,
     },
   ];
 
