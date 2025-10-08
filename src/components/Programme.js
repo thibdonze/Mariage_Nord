@@ -8,8 +8,7 @@ const Programme = () => {
       <div className="max-w-2xl mx-auto text-gray-800 mt-4 text-center px-4">
         {/* Introduction */}
         <p className="text-base sm:text-lg text-gray-700 mb-8">
-          Pour que vous sachiez quand trinquer, quand savourer et quand danser... 
-          voici le déroulé de ces deux jours que nous avons hâte de partager avec vous !
+           Histoire de savoir quand trinquer, se régaler et enflammer la piste, voici le programme de ces deux jours que nous avons hâte de partager avec vous !
         </p>
 
         {/* --- Samedi --- */}

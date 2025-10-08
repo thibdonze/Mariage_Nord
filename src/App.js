@@ -6,6 +6,7 @@ import Programme from "./components/Programme";
 import RSVP from "./components/RSVP";
 import Lieu from "./components/Lieu";
 import Participation from "./components/Participation";
+import FAQ from "./components/FAQ"; // 👈 import du nouveau composant
 
 function App() {
   const [activeTab, setActiveTab] = useState("programme");
@@ -27,6 +28,7 @@ function App() {
     { id: "seloger", label: "Se Loger" },
     { id: "lieu", label: "Le lieu" },
     { id: "rsvp", label: "RSVP" },
+    { id: "faq", label: "FAQ" }, // 👈 nouvel onglet
     { id: "participation", label: "Pour notre mariage" },
   ];
 
@@ -109,6 +111,7 @@ function App() {
           {activeTab === "seloger" && <SeLoger />}
           {activeTab === "rsvp" && <RSVP />}
           {activeTab === "lieu" && <Lieu />}
+          {activeTab === "faq" && <FAQ />} {/* 👈 nouvelle section FAQ */}
           {activeTab === "participation" && <Participation />}
         </main>
 
