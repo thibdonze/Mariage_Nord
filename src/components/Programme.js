@@ -5,32 +5,28 @@ import Section from "./Section";
 const Programme = () => {
   return (
     <Section>
-      <div className="max-w-2xl mx-auto text-gray-800 mt-4 text-center px-4">
+      <div className="max-w-2xl mx-auto text-gray-800 mt-4 px-4 text-left">
         {/* Introduction */}
         <p className="text-base sm:text-lg text-gray-700 mb-8">
-           Histoire de savoir quand trinquer, se régaler et enflammer la piste, voici le programme de ces deux jours que nous avons hâte de partager avec vous !
+          Du "oui" à l'église aux éclats de rire de la soirée, voici le fil de cette journée que nous avons hâte de partager avec vous !
         </p>
 
-        {/* --- Samedi --- */}
-        <h3 className="text-lg sm:text-2xl font-playfair font-bold underline mb-4 sm:mb-6">
-          Samedi 27 juin 2026
-        </h3>
-
         <ul className="space-y-4 sm:space-y-6 mb-10 sm:mb-14">
-          <li><p className="text-sm sm:text-xl">🕓 16h00 — Accueil des invités dans le parc du château.</p></li>
-          <li><p className="text-sm sm:text-xl">💍 16h30 — Cérémonie laïque dans le parc du château.</p></li>
-          <li><p className="text-sm sm:text-xl">🥂 17h30 — Cocktail dans le parc du château.</p></li>
-          <li><p className="text-sm sm:text-xl">🍽️ 20h00 — Dîner sous le chapiteau.</p></li>
-          <li><p className="text-sm sm:text-xl">🎉 00h00 — Soirée dansante dans le château.</p></li>
-        </ul>
-
-        {/* --- Dimanche --- */}
-        <h3 className="text-lg sm:text-2xl font-playfair font-bold underline mb-4 sm:mb-6">
-          Dimanche 28 juin 2026
-        </h3>
-
-        <ul className="space-y-4 sm:space-y-6">
-          <li><p className="text-sm sm:text-xl">🥐 12h00 — Foodtruck dans le parc du château.</p></li>
+          <li>
+            <p className="text-sm sm:text-xl">⛪ 14h30 — Cérémonie religieuse à l’Église de Thérouanne</p>
+          </li>
+          <li>
+            <p className="text-sm sm:text-xl">🕓 16h00 — Accueil des invités à la Salle de la Poudrerie à Esquerdes</p>
+          </li>
+          <li>
+            <p className="text-sm sm:text-xl">🥂 16h30 — Cocktail</p>
+          </li>
+          <li>
+            <p className="text-sm sm:text-xl">🍽️ 19h00 — Dîner</p>
+          </li>
+          <li>
+            <p className="text-sm sm:text-xl">🎉 23h00 — Soirée dansante</p>
+          </li>
         </ul>
       </div>
     </Section>

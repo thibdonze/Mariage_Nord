@@ -16,7 +16,7 @@ const RSVP = () => {
         </p>
 
         <a
-          href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__TD9YjVUMTVFM01ZWUg1QkJRTTBMQlhZSEFOOUdVMi4u" // ← à remplacer par ton lien de partage Forms
+          href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__TD9YjVUMllJWlNWNEg4UUQ0VjJCWTM4SE5JTldWRi4u" // ← à remplacer par ton lien de partage Forms
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-gray-800 text-white px-8 py-3 rounded-full text-lg sm:text-xl shadow-md hover:bg-gray-700 transition-all duration-200"

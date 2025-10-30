@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Countdown from "./components/Countdown";
 import { ChevronDown } from "lucide-react";
-import SeLoger from "./components/SeLoger";
 import Programme from "./components/Programme";
 import RSVP from "./components/RSVP";
 import Lieu from "./components/Lieu";
@@ -25,7 +24,6 @@ function App() {
 
   const tabs = [
     { id: "programme", label: "Programme" },
-    { id: "seloger", label: "Se Loger" },
     { id: "lieu", label: "Le lieu" },
     { id: "rsvp", label: "RSVP" },
     { id: "faq", label: "FAQ" }, // 👈 nouvel onglet
@@ -66,13 +64,13 @@ function App() {
             className="text-xl sm:text-3xl md:text-5xl"
             style={{ fontFamily: "'Playfair Display', sans-serif" }}
           >
-            27 juin 2026
+            5 septembre 2026
           </p>
         </div>
 
         {/* Countdown */}
         <div className="absolute left-0 right-0 text-center z-10 px-4 top-[80%] -translate-y-1/12">
-          <Countdown targetDate="2026-06-27T16:00:00" />
+          <Countdown targetDate="2026-09-05T14:30:00" />
         </div>
 
         {/* Chevron down */}
@@ -108,7 +106,6 @@ function App() {
         {/* Contenu des onglets */}
         <main className="px-4 pt-3 pb-1 font-playfair">
           {activeTab === "programme" && <Programme />}
-          {activeTab === "seloger" && <SeLoger />}
           {activeTab === "rsvp" && <RSVP />}
           {activeTab === "lieu" && <Lieu />}
           {activeTab === "faq" && <FAQ />} {/* 👈 nouvelle section FAQ */}
